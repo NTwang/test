@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<style type="text/css">	
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		:root{
+			font-size: 100%;
+		}
+		.wrapper { width: 100%; /* 960px/1024px  */ }
+		#logo{
+			background:url(images/27555.png) no-repeat;
+			width: 68px;
+			height: 68px;
+			margin:0 auto;
+			text-indent:-99999em;
+		}
+		.top{width: 97%;height: 40px;line-height: 40px;margin: 0 auto }
+		.top .left{float: left;}
+		.top .left li{float: left;padding:0 5px; cursor:pointer; margin:0 2px;}
+		.top .right{float: right;}
+		.top .right li{float: left;padding:0 5px; cursor:pointer;margin:0 2px;}
+		
+		@media screen and (max-width: 768px){
+			.top .left  {
+				float: none;
+			}
+			.top .right{
+				float: none;
+			}
+			.top .left li {
+				float: none;
+				text-align: center;
+				background:#ccc;
+				margin:3px 2px;
+			}
+			.top .right li {
+				float: none;
+				text-align: center;
+				background:#ccc;
+				margin:3px 2px;
+			}
+		}
+	</style>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<h1 id="logo">LOGO</h1>
+	<div class="top">
+		<ul class ="left">
+			<li>首页</li>
+			<li>手机</li>
+			<li>微信</li>
+			<li>其他</li>
+		</ul>
+		<ul class="right">
+			<li>登录</li>
+			<li>注册</li>
+			<li class="quickLogin">快速登录</li>
+			<li>退出</li>
+		</ul>
+		<span class="menu"></span>
+	</div>
+</div>	
+</body>
+</html>
